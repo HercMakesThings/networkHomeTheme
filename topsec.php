@@ -1,7 +1,7 @@
 <!--Front Page Top Section START-->
 <section class="topsec container-fluid" style="background-image: url('<?php echo wp_get_attachment_url(get_theme_mod('topsec_identity_bg')); ?>')">
   <nav class="navbar navbar-light nav py-0">
-    <a href="index.html"><img width="150px" src="<?php echo wp_get_attachment_url(get_theme_mod('first_identity_logo')); ?>" width="150px"></a>
+    <a href="https://firstportfol.io"><img width="150px" src="<?php echo wp_get_attachment_url(get_theme_mod('first_identity_logo')); ?>" width="150px"></a>
     <?php $args = array(
         'theme_location' => 'primary' 
       );
