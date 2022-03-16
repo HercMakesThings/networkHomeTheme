@@ -17,7 +17,7 @@ function enqueue_nethome_styles_and_scripts(){
     //main theme stylesheet
     wp_enqueue_style('stylecss', get_template_directory_uri(  ) . '/style.css', array(), '1.0.0', 'all');
     //alumni stylesheet
-    wp_enqueue_style( 'alum-styles', get_stylesheet_directory_uri(  ) . '/myassets/css/alum.css', array(), false, 'all');
+    wp_enqueue_style( 'alum-styles', get_stylesheet_directory_uri(  ) . '/myassets/css/alum.css', array(), filemtime(get_template_directory() . '/myassets/css/alum.css'), 'all');
 
     //enqueue bootstrap js
     wp_enqueue_script( 'bootstrap-script', get_theme_file_uri( ) . '/myassets/bootstrap/js/bootstrap.bundle.min.js', array(), '1.0.0', false );

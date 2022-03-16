@@ -67,6 +67,16 @@ function nethome_landing_images($wp_customize){
         'height' => '1080'
     )));
 
+    //setting & Congrol pair for single portfolio post template logo before redirection happens
+    $wp_customize->add_setting('first_redir_logo');
+    $wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize, 'first_redir_logo_control', array(
+        'label' => 'Redirection Page Logo Goes Here',
+        'section' => 'nethome_identity_section',
+        'settings' => 'first_redir_logo',
+        'width' => '250',
+        'height' => '94'
+    )));
+
 }
 
 add_action('customize_register', 'nethome_landing_images');
