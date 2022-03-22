@@ -43,6 +43,9 @@ function nethomeTheme_setup(){
     add_image_size( 'small-thumbnail', 180, 120, true);
     add_image_size('banner-image', 810, 200, true);
 
+    //adding support for block templates(for automatically adding the alumni redirects block to every new student portfolio post on creation)
+    add_theme_support( 'block-templates' );
+
     //register nav menus
     register_nav_menus(array(
         'primary' => __( 'Primary Menu'),
